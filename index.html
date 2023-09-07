@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"> 
+</head>
+ 
+  <div class="navbar">
+    <a src="contact.html">Contact</a>
+    <a href="#">Projects</a>
+    <a href="#">Home</a>
+</div>
+
+<div class="header">
+  <h1>Willow Noome</h1>
+  <p>Aspiring Full-Stack Web Developer</p>
+ </div> 
+  
+ <div class="image-container">
+    <img class= "img" src="IMG/AvatarMaker.png">
+ </div>
+
+ <div class="welcome">
+  <h2>Hello, World!</h2>
+<p>My name is Willow & I am an learning full-stack Web Development. I am in my third year 
+  at the University of Auckland studying a Bachelor of Laws (LLB) and a Bachelor of Commerce (BCom)
+  in Information Systems. I learn to code online, studying with Learning People Global, mostly utilising
+  the resource CodeCademy. I hold a strong passion for technology and the impact it has on our everyday
+  life. I am always learning new things and exploring the tech field ambitiously. I find coding to be fascinating
+  and fun! Explore my portfolio site and reach out if you have any questions! 
+</p>
+ </div>
+
+ <div class="container">
+  <form>
+    <h3>Get In Touch With Me</h3>
+    <input type="text" id="fullName" placeholder="Your Name" required>
+    <input type="email" id="email_id" placeholder="Your Email" required>
+    <input type="text" id="phone" placeholder="Your Phone Number" required>
+    <textarea id="message" rows="4" placeholder="Type Your Message..." required></textarea>
+    <button type="submit" onclick="sendMail()">Submit</button>
+  </form>
+</div>
+
+<div class="information">
+  <p>willownoome15@gmail.com  ●  <a href="https://www.linkedin.com/in/willow-noom%C3%A9-8081351b2/">Linkedin</a></p>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("user_untL5prVDjp4pK5tR");
+  })();
+</script>
+
+<script type="text/javascript">
+  function sendMail() {
+    var params = {
+      from_name: document.getElementById("fullName").value,
+      email_id: document.getElementById("email_id").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+    };
+    emailjs.send("service_s8ekvwl", "template_93j1f9o", params).then(function (res) {
+      alert("Success!" + res.status);
+    });
+  }
+</script>
+
+</body>
+</html>
