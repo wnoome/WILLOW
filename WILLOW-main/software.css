@@ -1,26 +1,45 @@
 /* Styling for the SOFTWARE page */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
 header {
   text-align: center;
-  background-color: lightpink;
-  padding: 50px 40px 30px;
+  padding: 50px 0;
+  background-color: light;
+  background-color: #ffe9f6;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-
-.header-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.header-content p {
-  font-size: 1.2em;
+h1 {
+  font-size: 3em;
   margin: 0;
+  color: #333;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: lightpink;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: 'Russo One';
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: pink;
+}
+
+.back-button {
+  text-align: left;
+  margin-top: 20px;
 }
 
 .coursework-section,
@@ -40,6 +59,7 @@ header {
 
 .languages-section h5 {
   font-size: 1.5em;
+  font-family: 'Space Grotesk';
   color: #333;
   margin-bottom: 10px;
   margin-top: 0;
@@ -67,6 +87,7 @@ header {
 .projects {
   text-align: center;
   font-size: 2em;
+  font-family: 'Space Grotesk';
   color: #333;
   margin-top: 20px;
 }

@@ -38,7 +38,6 @@
 }
 
 /* Navigation button styles */
-/* Navigation button styles */
 .buttons {
   text-align: center;
   margin-top: 30px;
@@ -56,7 +55,7 @@
   padding: 20px 10px;
   color: #fff;
   background-color: lightpink;
-  margin: 0 15px;
+  margin: 0 10px; /* Adjusted margin for larger screens */
   font-size: 1em;
   font-weight: bold;
   font-family: 'Russo One';
@@ -72,7 +71,7 @@
   color: #fff;
 }
 
-
+/* Form button styles */
 /* Form button styles */
 form button {
   padding: 20px 40px;
@@ -84,9 +83,9 @@ form button {
   outline: none;
   cursor: pointer;
   width: 250px;
-  margin: 20px auto 0;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 20px auto 0; /* Center the button horizontally */
 }
 
 form button:hover {
@@ -94,13 +93,12 @@ form button:hover {
   color: #000;
 }
 
-
 /* Form container styles */
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh; /* Adjusted to min-height for smaller screens */
   background: white;
   margin-top: -100px;
   margin-bottom: -90px;
@@ -145,14 +143,15 @@ form button {
   outline: none;
   cursor: pointer;
   width: 250px;
-  margin: 20px auto 0;
+  margin: 20px auto 0; /* Center the button horizontally */
   border-radius: 30px;
 }
 
 form button:hover {
-  background-color: lightblue;
+  background-color: #ffe9f6;
   cursor: pointer;
 }
+
 
 /* Information section styles */
 .information {
@@ -173,47 +172,47 @@ form button:hover {
   color: black;
 }
 
-
 @media only screen and (max-width: 600px) {
   .header {
-      padding: 30px 20px 50px; /* Adjusted header padding for smaller screens */
+    padding: 30px 20px 50px; /* Adjusted header padding for smaller screens */
   }
 
   .img {
-      width: 100px; /* Adjusted image size for smaller screens */
-      height: 100px;
-      margin-right: 10px;
+    width: 100px; /* Adjusted image size for smaller screens */
+    height: 100px;
+    margin-right: 10px;
   }
 
   .text-container h1 {
-      font-size: 30px; /* Adjusted font size for smaller screens */
-      letter-spacing: 5px;
-      margin-bottom: 10px;
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    letter-spacing: 5px;
+    margin-bottom: 10px;
   }
 
   .text-container p {
-      font-size: 18px; /* Adjusted font size for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
   }
 
   .button {
-      padding: 15px 8px; /* Adjusted button padding for smaller screens */
-      margin: 0 10px;
-      font-size: 0.8em; /* Adjusted font size for smaller screens */
+    padding: 15px 10px; /* Adjusted button padding for smaller screens */
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+    font-size: 0.8em; /* Adjusted font size for smaller screens */
   }
 
   .container {
-      margin-top: -50px; /* Adjusted margin for smaller screens */
-      margin-bottom: -40px;
+    margin-top: -50px; /* Adjusted margin for smaller screens */
+    margin-bottom: -40px;
   }
 
   form button {
-      padding: 15px 20px; /* Adjusted button padding for smaller screens */
-      font-size: 1.2em; /* Adjusted font size for smaller screens */
-      width: 200px; /* Adjusted width for smaller screens */
+    padding: 15px 20px; /* Adjusted button padding for smaller screens */
+    font-size: 1.2em; /* Adjusted font size for smaller screens */
+    width: 200px; /* Adjusted width for smaller screens */
+    margin: 20px 0 0; /* Adjusted margin for smaller screens */
   }
 
   .information p {
-      font-size: 16px; /* Adjusted font size for smaller screens */
-      padding: 15px;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    padding: 15px;
   }
 }

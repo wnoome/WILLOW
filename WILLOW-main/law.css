@@ -8,23 +8,34 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 50px 0;
+  background-color: light;
   background-color: #ffe9f6;
 }
 
-h1, h2, h3 {
-  margin-top: 0;
+h1 {
+  font-size: 3em;
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  color: #333;
 }
 
-.back-button {
-  margin-top: 10px;
+h2.work-experience {
+   text-align: center;
+   font-family: 'Space Grotesk';
 }
 
-.content {
-  padding: 20px;
+h2.volunteering {
+  text-align: center;
+  font-family: 'Space Grotesk';
 }
 
-.legal-experience {
+h2.engagement {
+  text-align: center;
+  font-family: 'Space Grotesk';
+}
+
+#legal-experience {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -35,6 +46,18 @@ h1, h2, h3 {
 
 .experience {
   margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Space Grotesk';
+}
+
+p {
+  color: #666;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -52,19 +75,27 @@ ul li {
   color: #fff;
   background-color: lightpink;
   padding: 10px 20px;
+  margin-left: 10px;
   border-radius: 5px;
   font-size: 1.2em;
+  font-family: 'Russo One';
   transition: background-color 0.3s ease;
-  display: inline-block; /* Ensures the button is on the same line */
-  margin-bottom: 10px;
 }
 
 .button:hover {
   background-color: pink;
 }
 
+.back-button {
+  text-align: left;
+  margin-top: 20px;
+}
+
 footer {
   background-color: #f0f0f0;
   text-align: center;
   padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
