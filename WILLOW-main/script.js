@@ -1,4 +1,4 @@
-<script>
+
   function sendMail() {
     emailjs.init("user_untL5prVDjp4pK5tR"); // Closing double quote was missing here
 
@@ -19,4 +19,4 @@
 
     return false; // Prevent the default form submission
   }
-</script>
+
